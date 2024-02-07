@@ -1,1 +1,3 @@
-多リクエスト 単レスポンス
+## client_streaming
+
+request(多) ： response(1)
