@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Hello;
+
+// The greeting service definition.
+service Hello {
+  // request と response の両方に  stream をつける
+  rpc SayHelllo (stream callHello) returns (stream responseHello) {}
+}
+
+message callHello {
+  string hello = 1;
+
+}
+
+// The response message containing the greetings
+message responseHello {
+  bool response = 1;
+}
