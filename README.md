@@ -10,3 +10,8 @@
 ```sh
 protoc -I gRPC/ gRPC/reserve.proto --dart_out=grpc:gRPC
 ```
+
+### import がある時 後ろにインポートするものをつける
+```sh
+ protoc -I gRPC/ gRPC/reserve.proto --dart_out=grpc:gRPC google/protobuf/timestamp.proto
+```
